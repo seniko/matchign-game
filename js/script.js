@@ -55,4 +55,5 @@ theBody.onclick = function gameOver() {
     alert("Game over\n" + "You score: " + count);
     theBody.onclick = null;
     theLeftSide.lastChild.onclick = null;
+    document.location.reload(); // reload the game in case of wrong choice (will execute after alert message)
 };
